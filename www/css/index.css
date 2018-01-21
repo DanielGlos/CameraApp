@@ -1,7 +1,16 @@
-body, html{
-    height:100%;
+html{
+    height: 100%;
+    box-sizing: border-box;
 }
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
 body{
+    position: relative;
     text-align: center;
     font-family: sans-serif;
     background-color: lightskyblue;
@@ -23,5 +32,8 @@ button{
 
 }
 .controls{
-    margin-top:100%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
 }

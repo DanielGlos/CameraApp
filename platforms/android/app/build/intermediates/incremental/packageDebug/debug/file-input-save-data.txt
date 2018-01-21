@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Sun Jan 21 14:58:03 EET 2018
+#Sun Jan 21 15:18:06 EET 2018
 25.file=/home/kokonaut/code/mobileInternetProgramming/cameraApp/platforms/android/app/build/intermediates/res/debug/resources-debug.ap_/res/drawable-port-xxhdpi-v4/screen.png
 25.base=/home/kokonaut/code/mobileInternetProgramming/cameraApp/platforms/android/app/build/intermediates/res/debug/resources-debug.ap_
 22.set=ANDROID_RESOURCE

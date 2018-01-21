@@ -23,9 +23,9 @@
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />
     </platform>
+    <engine name="android" spec="^7.0.0" />
     <plugin name="cordova-plugin-camera" spec="^4.0.1">
         <variable name="CAMERA_USAGE_DESCRIPTION" value="using camera" />
         <variable name="PHOTOLIBRARY_USAGE_DESCRIPTION" value="accessing photolibrary" />
     </plugin>
-    <engine name="android" spec="^7.0.0" />
 </widget>
