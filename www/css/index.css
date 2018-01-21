@@ -13,14 +13,7 @@ body{
     position: relative;
     text-align: center;
     font-family: sans-serif;
-    background-color: lightskyblue;
-}
-.block{
-    padding:.25rem 0;
-    margin:.25rem 0;
-    background: #00ccff;
-    border:1px solid #111;
-    border-radius: 3px;
+    background-color: black;
 }
 button{
     background: lightgray;
@@ -28,8 +21,8 @@ button{
     border:1px solid black;
     margin:.25rem;
 }
-.pictures{
-
+.picture {
+    border: none;
 }
 .controls{
     position: absolute;
