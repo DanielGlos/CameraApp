@@ -15,14 +15,14 @@ body{
     font-family: sans-serif;
     background-color: black;
 }
-button{
-    background: lightgray;
-    border-radius: 3px;
-    border:1px solid black;
-    margin:.25rem;
-}
-.picture {
-    border: none;
+button {
+    background: #3498db linear-gradient(to bottom, #3498db, #2980b9);
+    border-radius: 28px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
 }
 .controls{
     position: absolute;

@@ -1,36 +1,27 @@
-function setOptions(srcType) {
+
+function openCamera(srcType) {
+
+    var source = Camera.PictureSourceType.CAMERA;
+    if (srcType.localeCompare('cam') != 0)
+        source = Camera.PictureSourceType.PHOTOLIBRARY;
+
     var options = {
-        // Some common settings are 20, 50, and 100
         quality: 50,
         destinationType: Camera.DestinationType.FILE_URI,
-        // In this app, dynamically set the picture source, Camera or photo gallery
-        sourceType: srcType,
+        sourceType: source,
         encodingType: Camera.EncodingType.JPEG,
         mediaType: Camera.MediaType.PICTURE,
         allowEdit: false,
-        correctOrientation: true  //Corrects Android orientation quirks
+        correctOrientation: true
     }
-    return options;
-}
-
-function openCamera(selection) {
-
-    var srcType = Camera.PictureSourceType.CAMERA;
-    var options = setOptions(srcType);
 
     navigator.camera.getPicture(function cameraSuccess(imageUri) {
-
         displayImage(imageUri);
-        // You may choose to copy the picture, save it somewhere, or upload.
 
     }, function cameraError(error) {
         console.debug("Unable to obtain picture: " + error, "app");
 
     }, options);
-}
-
-function startCamera() {
-    Camera.startCamera();
 }
 
 function displayImage(imgUri) {
@@ -45,7 +36,6 @@ var app = {
     // Application Constructor
     initialize: function() {
         document.addEventListener('deviceready', this.onDeviceReady.bind(this), false);
-        document.getElementById('btn_takePicture').addEventListener('click', startCamera(), false);
     },
 
     // deviceready Event Handler
